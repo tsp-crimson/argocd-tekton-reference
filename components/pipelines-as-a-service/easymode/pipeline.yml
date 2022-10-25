@@ -8,12 +8,12 @@ spec:
   params:
   - name: deployment-name
     type: string
-    default: "pipelines-vote-api"
+    default: "pipelines-vote-ui"
     description: name of the deployment to be patched
   - name: git-url
     type: string
     description: url of the git repo for the code of deployment
-    default: "https://github.com/ploigos-reference-apps/pipelines-vote-api"
+    default: "https://github.com/tsp-crimson/pipelines-vote-ui"
   - name: git-revision
     type: string
     description: revision to be used from repo of the code for deployment
@@ -21,7 +21,7 @@ spec:
   - name: IMAGE
     type: string
     description: image to be build from the code
-    default: "image-registry.openshift-image-registry.svc:5000/pipelines-easymode/pipelines-vote-api"
+    default: "docker.io/tspcrimson/pipelines-vote-ui"
   - name: TLSVERIFY
     type: string
     description: Whether buildah should use TLS verification for interacting with container registries
@@ -72,6 +72,6 @@ spec:
     - name: deployment
       value: $(params.deployment-name)
     - name: IMAGE
-      value: $(params.IMAGE)
+      value: $(params.IMAGE)-$(context.pipelineRun.uid)
     runAfter:
     - apply-manifests
