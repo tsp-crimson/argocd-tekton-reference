@@ -13,7 +13,7 @@ spec:
         - "-DskipITs"
         - "package"
     - name: appRepoUrl
-      value: https://github.com/ploigos-reference-apps/demo-app1.git
+      value: https://github.com/tsp-crimson-reference-apps/demo-app1.git
     - name: appImage
       value: image-registry.openshift-image-registry.svc:5000/pipelines-minimal/demo-app1:latest
     - name: appRepoRef

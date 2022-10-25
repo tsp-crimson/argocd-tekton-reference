@@ -7,7 +7,7 @@ spec:
   - name: deployment-name
     value: pipelines-vote-api
   - name: git-url
-    value: https://github.com/ploigos-reference-apps/pipelines-vote-api
+    value: https://github.com/tsp-crimson-reference-apps/pipelines-vote-api
   - name: git-revision
     value: main
   - name: IMAGE

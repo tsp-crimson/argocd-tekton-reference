@@ -34,7 +34,7 @@ one that does not exist in CRC.
 
 To create a default StorageClass and fix the issue:
 1. Clone this git repository.
-   * `git clone https://github.com/ploigos/argocd-tekton-reference.git`
+   * `git clone https://github.com/tsp-crimson/argocd-tekton-reference.git`
 2. In the terminal, change directories to the root of the cloned repository.
    * `cd argocd-tekton-reference/`
 3. Login to OpenShift as kubeadmin using the `oc` cli. Refer to the output of `crc console --credentials`

@@ -13,7 +13,7 @@ spec:
   - name: git-url
     type: string
     description: url of the git repo for the code of deployment
-    default: "https://github.com/ploigos-reference-apps/pipelines-vote-api"
+    default: "https://github.com/tsp-crimson-reference-apps/pipelines-vote-api"
   - name: git-revision
     type: string
     description: revision to be used from repo of the code for deployment

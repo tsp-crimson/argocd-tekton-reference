@@ -4,7 +4,7 @@ A reference implementation for using ArgoCD, Tekton and OpenShift to implement g
 
 ## Documentation
 * [Getting Started Tutorial](https://ploigos.github.io/argocd-tekton-reference/) - A detailed introduction and setup instructions.
-* [Local Development Environment Setup](https://github.com/ploigos/argocd-tekton-reference/blob/main/docs/Local_Dev_Environment.md) - Set up a local development environment using CodeReady Containers.
+* [Local Development Environment Setup](https://github.com/tsp-crimson/argocd-tekton-reference/blob/main/docs/Local_Dev_Environment.md) - Set up a local development environment using CodeReady Containers.
 
 ## Quick Setup
 If you have done this sort of thing before, these instructions will get you up and running quickly. The [Getting Started Tutorial](https://ploigos.github.io/argocd-tekton-reference/) includes alternative setup instructions that use the web UI.
@@ -40,7 +40,7 @@ You can use the [tkn cli](https://github.com/tektoncd/cli) to start the "easymod
 
 ## Triggering a Pipeline Run when your Application Changes
 You can configure your source code repository to trigger a webhook and start the pipeline whenever your source code changes. These instructions assume you are using GitHub. The steps are very similar for most other services.
-1. Fork the [example application](https://github.com/ploigos-reference-apps/pipelines-vote-api) on GitHub.
+1. Fork the [example application](https://github.com/tsp-crimson-reference-apps/pipelines-vote-api) on GitHub.
 2. Configure your fork in  GitHub to start your Pipeline when the Application source code canges.
    * Settings -> Webhooks -> Add Webhook.
    * `Payload URL` - Enter the URL for the "easymode" EventListener Route that Tekton is listening on. You can look up the correct the hostname with `oc get route -n pipelines-easymode -o wide`. The URL should look like https://[EventListner Route].[your.cluster.com]/
